@@ -6,21 +6,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonRed, buttonBlue;
+    Button buttonBlue;
     LinearLayout layout;
+    TextView textViewRed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonRed = findViewById(R.id.redButton);
+        textViewRed = findViewById(R.id.redTextView);
         buttonBlue = findViewById(R.id.blueButton);
         layout = findViewById(R.id.myLayout);
 
-        buttonRed.setOnClickListener(new View.OnClickListener(){
+        textViewRed.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
                 layout.setBackgroundColor(Color.RED);

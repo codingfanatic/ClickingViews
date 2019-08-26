@@ -14,8 +14,8 @@
         android:layout_weight="1"
         android:layout_width="wrap_content" />
 
-    <Button
-        android:id="@+id/redButton"
+    <TextView
+        android:id="@+id/redTextView"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="Change to RED" />
